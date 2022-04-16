@@ -5,17 +5,17 @@
 La [integración de Lua](https://www.youtube.com/watch?v=IP3J56sKtn0) como [lenguaje de primera clase 
 dentro de Neovim](https://github.com/neovim/neovim/wiki/FAQ#why-embed-lua-instead-of-x) se perfila como una de sus características más destacadas. Sin embargo, la cantidad 
 de material didactico para aprender a escribir plugins en Lua no es tan grande como la que se puede 
-encontrar para escribirlos en Vimscript. Esta guia es un intento de proveer información básica a 
+encontrar para escribirlos en Vimscript. Esta guía es un intento de proveer información básica a 
 las personas para que puedan empezar.
 
-Esta guia asume que tu estás unando, al menos, la version 0.5 de Neovim.
+Esta guía asume que tu estás usando, al menos, la version 0.5 de Neovim.
 
 ### Aprendiendo Lua.
 
-Si tu no estas familiarizado con este lenguaje, hay un varios recursos para empezar:
+Si tu no estás familiarizado con este lenguaje, hay un varios recursos para empezar:
 
-- [Aprende X en Y minutes, una pagina sobre Lua](https://learnxinyminutes.com/docs/lua/) debería darte una vision general de los conceptos básicos.
-- [Esta guia](https://github.com/medwatt/Notes/blob/main/Lua/Lua_Quick_Guide.ipynb) tambien es un buen recurso para empezar rapidamente
+- [Aprende X en Y minutes, una página sobre Lua](https://learnxinyminutes.com/docs/lua/) debería darte una visión general de los conceptos básicos.
+- [Esta guía](https://github.com/medwatt/Notes/blob/main/Lua/Lua_Quick_Guide.ipynb) también es un buen recurso para empezar rápidamente
 - Si aprender mediante videos es más de tu agrado, Derek Banas tiene un [tutorial de
   1-hora sobre el lenguaje](https://www.youtube.com/watch?v=iMacxZQMPXs)
 - ¿Deseas algo más interactivo con ejemplos ejecutables? intenta [The LuaScript tutorial](https://www.luascript.dev/learn)
@@ -36,7 +36,7 @@ con Lua 5.1
 ### Tutoriales existentes para escribir Lua en Neovim
 
 Ya se han escrito algunos tutoriales para ayudar a la gente a escribir plugins en Lua. Algunos de 
-ellos han ayudado muchisimo a la hora de escribir esta guía. Muchas gracias a sus autores.
+ellos han ayudado muchísimo a la hora de escribir esta guía. Muchas gracias a sus autores.
 
 
 - [teukka.tech - From init.vim to init.lua](https://teukka.tech/luanvim.html)
@@ -58,7 +58,7 @@ Plugins complementarios
 - [BetterLua.vim - Better Lua syntax highlighting in Vim/NeoVim](https://github.com/euclidianAce/BetterLua.vim) 
 
 
-## Donde ubicar los archivos de Lua
+## Dónde ubicar los archivos de Lua
 -----------------------------------------------------------------------------------
 ### init.lua
 
@@ -102,7 +102,7 @@ El siguiente código de Lua cargará `myluamodule.lua`:
 require('myluamodule')
 ```
 
-Date cuenta la ausencia de la extension `.lua`.
+Date cuenta la ausencia de la extensión `.lua`.
 
 Así mismo, cargar `other_modules/anothermodule.lua` se hace así:
 
@@ -257,7 +257,7 @@ También ve:
 :source ~/foo/bar/baz/myluafile.lua
 :source %
 ```
-`:source` tambien soporta rangos, que tambien pueden ser utiles para solo ejecutar una parte de 
+`:source` también soporta rangos, que pueden ser utiles para solo ejecutar una parte de 
 un script:
 
 ```vim
